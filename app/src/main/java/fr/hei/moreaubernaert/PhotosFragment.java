@@ -1,4 +1,4 @@
-package info.androidhive.ProjetMB;
+package fr.hei.moreaubernaert;
 
 import android.app.Fragment;
 
@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import info.androidhive.ProjetMB.adapter.ItemListBaseAdapter;
+import fr.hei.moreaubernaert.adapter.ItemListBaseAdapter;
 
 
 public class PhotosFragment extends Fragment {
@@ -24,11 +24,11 @@ public class PhotosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        final View rootView = inflater.inflate(R.layout.fragment_photos, container, false);
+        final View rootView = inflater.inflate(fr.hei.moreaubernaert.R.layout.fragment_photos, container, false);
 
         ArrayList<ItemDetails> image_details = GetSearchResults();
 
-        final ListView lv1 = (ListView)rootView.findViewById(R.id.listV_main);
+        final ListView lv1 = (ListView)rootView.findViewById(fr.hei.moreaubernaert.R.id.listV_main);
         lv1.setAdapter(new ItemListBaseAdapter(getActivity(), image_details));
 
         lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -46,47 +46,34 @@ public class PhotosFragment extends Fragment {
         ArrayList<ItemDetails> results = new ArrayList<ItemDetails>();
 
         ItemDetails item_details = new ItemDetails();
-        item_details.setName("Pizza");
-        item_details.setItemDescription("Spicy Chiken Pizza");
-        item_details.setPrice("RS 310.00");
+        item_details.setName("Spicy Chiken Pizza");
         item_details.setImageNumber(1);
         results.add(item_details);
 
         item_details = new ItemDetails();
-        item_details.setName("Burger");
-        item_details.setItemDescription("Beef Burger");
-        item_details.setPrice("RS 350.00");
+        item_details.setName("Beef Burger");
         item_details.setImageNumber(2);
         results.add(item_details);
 
         item_details = new ItemDetails();
-        item_details.setName("Pizza");
-        item_details.setItemDescription("Chiken Pizza");
-        item_details.setPrice("RS 250.00");
+        item_details.setName("Chiken Pizza");
         item_details.setImageNumber(3);
         results.add(item_details);
 
         item_details = new ItemDetails();
-        item_details.setName("Burger");
-        item_details.setItemDescription("Chicken Burger");
-        item_details.setPrice("RS 350.00");
+        item_details.setName("Chicken Burger");
         item_details.setImageNumber(4);
         results.add(item_details);
 
         item_details = new ItemDetails();
-        item_details.setName("Burger");
-        item_details.setItemDescription("Fish Burger");
-        item_details.setPrice("RS 310.00");
+        item_details.setName("Fish Burger");
         item_details.setImageNumber(5);
         results.add(item_details);
 
         item_details = new ItemDetails();
-        item_details.setName("Mango");
-        item_details.setItemDescription("Mango Juice");
-        item_details.setPrice("RS 250.00");
+        item_details.setName("Mango Juice");
         item_details.setImageNumber(6);
         results.add(item_details);
-
 
         return results;
     }

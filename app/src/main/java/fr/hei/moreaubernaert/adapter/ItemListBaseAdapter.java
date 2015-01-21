@@ -1,4 +1,4 @@
-package info.androidhive.ProjetMB.adapter;
+package fr.hei.moreaubernaert.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import info.androidhive.ProjetMB.ItemDetails;
-import info.androidhive.ProjetMB.R;
+import fr.hei.moreaubernaert.ItemDetails;
+import fr.hei.moreaubernaert.R;
 
 public class ItemListBaseAdapter extends BaseAdapter {
 	private static ArrayList<ItemDetails> itemDetailsrrayList;
@@ -50,8 +50,8 @@ public class ItemListBaseAdapter extends BaseAdapter {
 			convertView = l_Inflater.inflate(R.layout.item_details_view, null);
 			holder = new ViewHolder();
 			holder.txt_itemName = (TextView) convertView.findViewById(R.id.name);
-			holder.txt_itemDescription = (TextView) convertView.findViewById(R.id.itemDescription);
-			holder.txt_itemPrice = (TextView) convertView.findViewById(R.id.price);
+			//holder.txt_itemDescription = (TextView) convertView.findViewById(R.id.itemDescription);
+			//holder.txt_itemPrice = (TextView) convertView.findViewById(R.id.price);
 			holder.itemImage = (ImageView) convertView.findViewById(R.id.photo);
 
 			convertView.setTag(holder);
@@ -60,8 +60,8 @@ public class ItemListBaseAdapter extends BaseAdapter {
 		}
 		
 		holder.txt_itemName.setText(itemDetailsrrayList.get(position).getName());
-		holder.txt_itemDescription.setText(itemDetailsrrayList.get(position).getItemDescription());
-		holder.txt_itemPrice.setText(itemDetailsrrayList.get(position).getPrice());
+		//holder.txt_itemDescription.setText(itemDetailsrrayList.get(position).getItemDescription());
+		//holder.txt_itemPrice.setText(itemDetailsrrayList.get(position).getPrice());
 		holder.itemImage.setImageResource(imgid[itemDetailsrrayList.get(position).getImageNumber() - 1]);
 //		imageLoader.DisplayImage("http://192.168.1.28:8082/ANDROID/images/BEVE.jpeg", holder.itemImage);
 
@@ -70,8 +70,8 @@ public class ItemListBaseAdapter extends BaseAdapter {
 
 	static class ViewHolder {
 		TextView txt_itemName;
-		TextView txt_itemDescription;
-		TextView txt_itemPrice;
+		//TextView txt_itemDescription;
+		//TextView txt_itemPrice;
 		ImageView itemImage;
 	}
 }

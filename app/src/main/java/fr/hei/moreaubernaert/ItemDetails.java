@@ -1,4 +1,4 @@
-package info.androidhive.ProjetMB;
+package fr.hei.moreaubernaert;
 
 public class ItemDetails {
 	
@@ -8,6 +8,7 @@ public class ItemDetails {
 	public void setName(String name) {
 		this.name = name;
 	}
+    /*
 	public String getItemDescription() {
 		return itemDescription;
 	}
@@ -20,6 +21,7 @@ public class ItemDetails {
 	public void setPrice(String price) {
 		this.price = price;
 	}
+	*/
 	public int getImageNumber() {
 		return imageNumber;
 	}
@@ -28,8 +30,8 @@ public class ItemDetails {
 	}
 	
 	private String name ;
-	private String itemDescription;
-	private String price;
+	//private String itemDescription;
+	//private String price;
 	private int imageNumber;
 
 	

@@ -1,7 +1,7 @@
-package info.androidhive.ProjetMB.adapter;
+package fr.hei.moreaubernaert.adapter;
 
-import info.androidhive.ProjetMB.R;
-import info.androidhive.ProjetMB.model.NavDrawerItem;
+import fr.hei.moreaubernaert.R;
+import fr.hei.moreaubernaert.model.NavDrawerItem;
 
 import java.util.ArrayList;
 

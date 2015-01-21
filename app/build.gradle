@@ -4,7 +4,7 @@ android {
     compileSdkVersion 18
     buildToolsVersion "21.1.2"
     defaultConfig {
-        applicationId "info.androidhive.slidingmenu"
+        applicationId 'fr.hei.moreaubernaert'
         minSdkVersion 16
         targetSdkVersion 17
     }

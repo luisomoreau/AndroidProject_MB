@@ -1,4 +1,4 @@
-package info.androidhive.ProjetMB;
+package fr.hei.moreaubernaert;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+        View rootView = inflater.inflate(fr.hei.moreaubernaert.R.layout.fragment_home, container, false);
          
         return rootView;
     }

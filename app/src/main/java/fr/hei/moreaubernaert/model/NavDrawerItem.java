@@ -1,4 +1,4 @@
-package info.androidhive.ProjetMB.model;
+package fr.hei.moreaubernaert.model;
 
 public class NavDrawerItem {
 	
