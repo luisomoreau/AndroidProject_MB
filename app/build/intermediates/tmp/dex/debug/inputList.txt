@@ -1,0 +1,2 @@
+C:\Users\Louis\ownCloud\HEI\ITI\Mobile_Programmation\projet\SlidingMenu\app\build\intermediates\classes\debug
+C:\Users\Louis\ownCloud\HEI\ITI\Mobile_Programmation\projet\SlidingMenu\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-718db58e3ceaa5acec24d448bd2f64be2ed17b35.jar
