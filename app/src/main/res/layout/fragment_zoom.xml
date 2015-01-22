@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <fr.hei.moreaubernaert.View.TouchImageView
+    <fr.hei.moreaubernaert.model.TouchImageView
         android:id="@+id/img"
         android:scaleType="centerCrop"
         android:layout_width="match_parent"

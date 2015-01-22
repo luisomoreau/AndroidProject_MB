@@ -1,4 +1,4 @@
-package fr.hei.moreaubernaert;
+package fr.hei.moreaubernaert.model;
 
 public class ItemDetails {
 	

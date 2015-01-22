@@ -1,4 +1,4 @@
-package fr.hei.moreaubernaert;
+package fr.hei.moreaubernaert.View;
 
 import fr.hei.moreaubernaert.adapter.NavDrawerListAdapter;
 import fr.hei.moreaubernaert.model.NavDrawerItem;

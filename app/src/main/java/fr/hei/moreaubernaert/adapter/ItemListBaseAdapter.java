@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import fr.hei.moreaubernaert.ItemDetails;
+import fr.hei.moreaubernaert.model.ItemDetails;
 import fr.hei.moreaubernaert.R;
 
 public class ItemListBaseAdapter extends BaseAdapter {

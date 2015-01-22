@@ -1,4 +1,4 @@
-package fr.hei.moreaubernaert;
+package fr.hei.moreaubernaert.View;
 
 import android.app.Fragment;
 import android.os.Bundle;

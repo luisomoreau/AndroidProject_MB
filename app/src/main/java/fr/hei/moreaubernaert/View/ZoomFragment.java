@@ -1,4 +1,4 @@
-package fr.hei.moreaubernaert.model;
+package fr.hei.moreaubernaert.View;
 
 
 import android.app.Fragment;
@@ -9,9 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import fr.hei.moreaubernaert.R;
-
-
-import fr.hei.moreaubernaert.View.TouchImageView;
 
 public class ZoomFragment extends Fragment {
 
