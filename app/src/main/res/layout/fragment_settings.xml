@@ -2,7 +2,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
+    android:weightSum="1">
 
     //Rechercher un dossier
     <TextView android:id="@+id/textview"
@@ -17,31 +17,40 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content">
 
-        //affiche le nom du dossier
-        <EditText
-            android:layout_alignParentLeft="true"
-            android:hint="EditText"
-            android:id="@+id/editText"
-            android:layout_width="fill_parent"
+        <RadioGroup
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:layout_toLeftOf="@+id/skipButton"
-            android:text="@string/textviewvalue">
-        </EditText>
+            android:layout_below="@+id/text"
+            android:id="@+id/myRadioGroup"
+            android:checkedButton="@+id/dossier"
+            android:layout_weight="0.26">
 
-        //Permet de rechercher un dossier
-        <Button android:text="@string/browser_value"
-            android:id="@+id/skipButton"
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sound"
+                android:text="@string/Dossier1" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vibration"
+                android:text="@string/Dossier2" />
+
+        </RadioGroup>
+
+        <Button android:text="@string/button_valider"
+            android:id="@+id/validerButton"
             android:textSize="18dp"
             android:layout_marginTop="10dp"
             android:layout_alignParentRight="true"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:onClick="getfile">
+            android:onClick="getfile"
+            android:layout_gravity="center_horizontal">
         </Button>
+
+
     </RelativeLayout>
+
+
 </LinearLayout>

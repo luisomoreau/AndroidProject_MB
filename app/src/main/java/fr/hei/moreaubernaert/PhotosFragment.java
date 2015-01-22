@@ -2,6 +2,8 @@ package fr.hei.moreaubernaert;
 
 import android.app.Fragment;
 
+import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +15,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import fr.hei.moreaubernaert.adapter.ItemListBaseAdapter;
+import fr.hei.moreaubernaert.model.ZoomFragment;
 
 
 public class PhotosFragment extends Fragment {
@@ -34,13 +37,21 @@ public class PhotosFragment extends Fragment {
         lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
-                Object o = lv1.getItemAtPosition(position);
-                ItemDetails obj_itemDetails = (ItemDetails)o;
-                Toast.makeText(rootView.getContext(), "You have chosen : " + " " + obj_itemDetails.getName(), Toast.LENGTH_SHORT).show();
+               ZoomFragment fragment = new ZoomFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(fr.hei.moreaubernaert.R.id.frame_container, fragment).commit();
+
+                //startFragment(new Intent(getActivity(), ZoomFragment.class));
+               // Object o = lv1.getItemAtPosition(position);
+                //ItemDetails obj_itemDetails = (ItemDetails)o;
+                //Toast.makeText(rootView.getContext(), "You have chosen : " + " " + obj_itemDetails.getName(), Toast.LENGTH_SHORT).show();
             }
         });
         return rootView;
     }
+
+
 
     private ArrayList<ItemDetails> GetSearchResults() {
         ArrayList<ItemDetails> results = new ArrayList<ItemDetails>();

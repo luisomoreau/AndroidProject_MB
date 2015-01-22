@@ -24,9 +24,12 @@
     
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
-    <string name="textviewvalue">Choisir un dossier</string>
+    <string name="textviewvalue">Choisir un Menu</string>
     <string name="browser_value">rechercher</string>
     <string name="home_fragment_text">Bienvenu sur l\'application qui vaut une bonne note !</string>
     <string name="app_autors_home_fragment"><![CDATA[Marin Bernaert & Louis Moreau]]></string>
 
+    <string name="Dossier1">Menu 1</string>
+    <string name="Dossier2">Menu 2</string>
+    <string name="button_valider">Valider</string>
 </resources>
