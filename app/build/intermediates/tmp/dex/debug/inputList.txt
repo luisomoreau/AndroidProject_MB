@@ -1,2 +1,2 @@
-C:\Users\Louis\ownCloud\HEI\ITI\Mobile_Programmation\ProjetAndroid\AndroidProject_MB\app\build\intermediates\classes\debug
-C:\Users\Louis\ownCloud\HEI\ITI\Mobile_Programmation\ProjetAndroid\AndroidProject_MB\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-718db58e3ceaa5acec24d448bd2f64be2ed17b35.jar
+C:\Users\Marin\workspace\AndroidProject_MB\app\build\intermediates\classes\debug
+C:\Users\Marin\workspace\AndroidProject_MB\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-5760f0f13f42b906a083ffc20ed1872317d7c8e2.jar

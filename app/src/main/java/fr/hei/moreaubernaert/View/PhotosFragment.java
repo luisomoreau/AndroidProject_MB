@@ -3,6 +3,7 @@ package fr.hei.moreaubernaert.View;
 import android.app.Fragment;
 
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,7 +38,15 @@ public class PhotosFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                ZoomFragment fragment = new ZoomFragment();
+                String infoPasser=Integer.toString(position);
+                Bundle bundle = new Bundle();
+                System.out.println(infoPasser);
+
+                //Intent intent = new Intent(this, fr.hei.moreaubernaert.View.ZoomFragment.class);
+
+                bundle.putString("infoPasser", infoPasser);
                 FragmentManager fragmentManager = getFragmentManager();
+                fragment.setArguments(bundle);
                 fragmentManager.beginTransaction()
                         .replace(fr.hei.moreaubernaert.R.id.frame_container, fragment).commit();
 
@@ -56,32 +65,32 @@ public class PhotosFragment extends Fragment {
         ArrayList<ItemDetails> results = new ArrayList<ItemDetails>();
 
         ItemDetails item_details = new ItemDetails();
-        item_details.setName("Spicy Chiken Pizza");
+        item_details.setName("Pizza Regina");
         item_details.setImageNumber(1);
         results.add(item_details);
 
         item_details = new ItemDetails();
-        item_details.setName("Beef Burger");
+        item_details.setName("Pizza Chocolat");
         item_details.setImageNumber(2);
         results.add(item_details);
 
         item_details = new ItemDetails();
-        item_details.setName("Chiken Pizza");
+        item_details.setName("Pizza Love");
         item_details.setImageNumber(3);
         results.add(item_details);
 
         item_details = new ItemDetails();
-        item_details.setName("Chicken Burger");
+        item_details.setName("Pizza Viande");
         item_details.setImageNumber(4);
         results.add(item_details);
 
         item_details = new ItemDetails();
-        item_details.setName("Fish Burger");
+        item_details.setName("Pizza Fromage");
         item_details.setImageNumber(5);
         results.add(item_details);
 
         item_details = new ItemDetails();
-        item_details.setName("Mango Juice");
+        item_details.setName("Pizza Vegetarienne");
         item_details.setImageNumber(6);
         results.add(item_details);
 

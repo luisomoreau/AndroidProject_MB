@@ -1,5 +1,6 @@
 package fr.hei.moreaubernaert.View;
 
+import fr.hei.moreaubernaert.R;
 import fr.hei.moreaubernaert.adapter.NavDrawerListAdapter;
 import fr.hei.moreaubernaert.model.NavDrawerItem;
 
@@ -11,6 +12,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -19,7 +21,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 
 /* Here we create the main activity. This activity will manage the different fragments of our application */
@@ -28,6 +32,7 @@ public class MainActivity extends Activity {
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
+    private boolean isDrawerLocked = false;
 
 	// nav drawer title
 	private CharSequence mDrawerTitle;
@@ -59,8 +64,16 @@ public class MainActivity extends Activity {
 
 		mDrawerLayout = (DrawerLayout) findViewById(fr.hei.moreaubernaert.R.id.drawer_layout);
 		mDrawerList = (ListView) findViewById(fr.hei.moreaubernaert.R.id.list_slidermenu);
+        FrameLayout frameLayout = (FrameLayout)findViewById(R.id.frame_container);
 
 		navDrawerItems = new ArrayList<NavDrawerItem>();
+
+
+        if(((ViewGroup.MarginLayoutParams)frameLayout.getLayoutParams()).leftMargin == (int)getResources().getDimension(R.dimen.drawer_content_padding)) {
+            mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_OPEN, mDrawerList);
+            mDrawerLayout.setScrimColor(Color.TRANSPARENT);
+            isDrawerLocked = true;
+        }
 
 		// adding nav drawer items to array
 		// Home

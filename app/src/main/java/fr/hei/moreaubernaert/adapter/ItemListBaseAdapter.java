@@ -17,13 +17,7 @@ public class ItemListBaseAdapter extends BaseAdapter {
 	private static ArrayList<ItemDetails> itemDetailsrrayList;
 	
 	private Integer[] imgid = {
-			R.drawable.p1,
-			R.drawable.bb2,
-			R.drawable.p2,
-			R.drawable.bb5,
-			R.drawable.bb6,
-			R.drawable.d1
-			};
+            R.drawable.pizza_regina1,R.drawable.pizza_chocolate2,R.drawable.pizza_love3, R.drawable.pizza_meat4,R.drawable.pizza_cheese5,R.drawable.pizza_veggie6};
 	
 	private LayoutInflater l_Inflater;
 
